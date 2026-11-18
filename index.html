@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FUELX — Fuel Your Everyday Strength</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f6f5f1;--s:#fff;--t:#111;--m:#5b5b5b;--l:#e3e1d9;--a:#e8ff00;--h:#0b0b0b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0b0b;--s:#161616;--t:#f4f4f0;--m:#a3a3a0;--l:#262626}}
+:root[data-theme="dark"]{--bg:#0b0b0b;--s:#161616;--t:#f4f4f0;--m:#a3a3a0;--l:#262626}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--t);font:400 16px/1.6 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;text-transform:uppercase;line-height:1;margin:0}
+a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--h);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none;font:800 30px "Barlow Condensed",Impact,sans-serif;letter-spacing:.05em}
+.logo svg{width:34px;height:34px}.logo b{color:var(--a)}
+nav{display:flex;gap:22px;font-size:14px;font-weight:500}nav a{text-decoration:none;opacity:.8}nav a:hover{opacity:1;color:var(--a)}
+.btn{display:inline-block;background:var(--a);color:#111;font:600 15px Inter,sans-serif;padding:14px 28px;border-radius:999px;text-decoration:none;border:0;cursor:pointer}
+.btn.ghost{background:transparent;color:inherit;border:1.5px solid currentColor}.btn.sm{padding:9px 18px;font-size:14px}
+.cartbtn{background:none;border:1.5px solid #444;color:#fff;border-radius:999px;padding:8px 16px;cursor:pointer;font:600 14px Inter}
+.cartbtn span{background:var(--a);color:#111;border-radius:99px;padding:1px 8px;margin-left:6px}
+.hero{background:var(--h);color:#fff;padding:80px 0 90px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--a);font-weight:600;margin-bottom:16px}
+.hero h1{font-size:clamp(56px,10vw,124px);font-weight:800}.hero h1 span{color:var(--a)}
+.hero p{font-size:19px;color:#c9c9c4;max-width:460px;margin:20px 0 32px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.stack{position:relative;height:340px}
+.pk{position:absolute;border-radius:16px;display:flex;align-items:flex-end;padding:16px;font:800 28px "Barlow Condensed",Impact,sans-serif;color:#111;box-shadow:0 20px 40px rgba(0,0,0,.5)}
+.pk small{display:block;font:600 11px Inter;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
+.pk.a{width:150px;height:300px;left:4%;top:20px;background:#e8ff00;transform:rotate(-8deg)}
+.pk.b{width:180px;height:230px;left:34%;top:60px;background:#ff7a1a;transform:rotate(4deg)}
+.pk.c{width:130px;height:290px;right:2%;top:10px;background:#ff3d71;transform:rotate(10deg);border-radius:40px 40px 16px 16px}
+section{padding:80px 0}h2{font-size:clamp(40px,6vw,68px);font-weight:800;margin-bottom:12px}
+.lead{color:var(--m);max-width:560px;margin:0 0 32px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.tab{border:1.5px solid var(--l);background:var(--s);color:var(--t);border-radius:999px;padding:8px 20px;cursor:pointer;font:500 14px Inter}
+.tab.on{background:var(--t);color:var(--bg);border-color:var(--t)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--s);border:1px solid var(--l);border-radius:20px;padding:24px}
+.sw{height:150px;border-radius:14px;margin-bottom:18px;display:flex;align-items:center;justify-content:center;font:800 40px "Barlow Condensed",Impact,sans-serif;color:#111}
+.card h3{font-size:28px;margin-bottom:6px}.card p{margin:0 0 14px;color:var(--m);font-size:14px}
+.row{display:flex;justify-content:space-between;align-items:center}.price{font:800 28px "Barlow Condensed";}
+.why{background:var(--h);color:#fff}.why .lead,.why .card p{color:#a9a9a4}.why .card{background:#161616;border-color:#262626}
+.why .grid{grid-template-columns:repeat(4,1fr)}.num{font:800 40px "Barlow Condensed";color:var(--a)}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.about p{color:var(--m)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}.stat{background:var(--s);border:1px solid var(--l);border-radius:20px;padding:24px}
+.stat b{display:block;font:800 48px "Barlow Condensed"}.stat span{color:var(--m);font-size:14px}
+.box{background:var(--a);color:#111;border-radius:28px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+form{display:grid;gap:12px}
+input,textarea{width:100%;padding:14px 16px;border-radius:12px;border:1.5px solid #111;background:#fff;color:#111;font:inherit}
+.box .btn{background:#111;color:#fff}
+footer{background:var(--h);color:#a9a9a4;padding:40px 0;font-size:14px}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:center}
+#ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:40}
+#dr{position:fixed;top:0;right:-440px;width:min(420px,100%);height:100%;background:var(--bg);z-index:50;transition:right .25s;display:flex;flex-direction:column;padding:20px;padding-top:calc(20px + env(safe-area-inset-top,0px));overflow:auto}
+#dr.open{right:0}.ci{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--l);gap:8px}
+.q button{width:28px;height:28px;border-radius:50%;border:1px solid var(--l);background:var(--s);color:var(--t);cursor:pointer}
+.pay{display:grid;gap:8px;margin:12px 0}.pay label{display:flex;gap:10px;align-items:center;border:1.5px solid var(--l);border-radius:12px;padding:12px;background:var(--s);cursor:pointer}
+.pay input{width:auto}#dr .btn{width:100%;text-align:center}
+@media(max-width:820px){nav{display:none}.hero .wrap,.about .wrap,.box{grid-template-columns:1fr}.grid,.why .grid{grid-template-columns:1fr}.stack{height:300px}.box{padding:28px}section{padding:56px 0}}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><symbol id="lg" viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#e8ff00"/><path d="M23 5 9 22h9l-2 13 15-19h-9z" fill="#111"/></symbol></svg>
+<header><div class="wrap">
+<a class="logo" href="#top"><svg><use href="#lg"/></svg>FUEL<b>X</b></a>
+<nav><a href="#shop">Shop</a><a href="#why">Why FUELX</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<div style="display:flex;gap:10px;align-items:center"><button class="cartbtn" onclick="tg(1)">Cart<span id="cn">0</span></button><a class="btn sm" href="#shop">Shop now</a></div>
+</div></header>
+<main id="top">
+<div class="hero"><div class="wrap"><div>
+<div class="eyebrow">Protein bars · Protein chips · Fruit juices</div>
+<h1>Fuel your <span>everyday</span> strength.</h1>
+<p>Smart, tasty nutrition for people who keep moving. Proudly made in India.</p>
+<div class="btns"><a class="btn" href="#shop">Shop now</a><a class="btn ghost" href="#about">Our story</a></div></div>
+<div class="stack" aria-hidden="true"><div class="pk a"><div>FUELX<small>Protein bar</small></div></div><div class="pk b"><div>FUELX<small>Protein chips</small></div></div><div class="pk c"><div>FUELX<small>Fruit juice</small></div></div></div>
+</div></div>
+<section id="shop"><div class="wrap"><h2>Shop FUELX</h2><p class="lead">Pick your fuel. Add to cart and check out in seconds.</p>
+<div class="tabs" id="tabs"></div><div class="grid" id="pg"></div></div></section>
+<section id="why" class="why"><div class="wrap"><h2>Built for the way you live</h2><p class="lead">Nutrition that fits into your day, not the other way around.</p>
+<div class="grid">
+<div class="card"><div class="num">01</div><h3>Protein that performs</h3><p>Snacks built for active, on-the-go lifestyles.</p></div>
+<div class="card"><div class="num">02</div><h3>Taste first</h3><p>Bold flavours you’ll actually look forward to.</p></div>
+<div class="card"><div class="num">03</div><h3>Quality you can trust</h3><p>Carefully made with ingredients chosen with care.</p></div>
+<div class="card"><div class="num">04</div><h3>Made for everyday</h3><p>Easy to carry and enjoy at work, gym or home.</p></div></div></div></section>
+<section id="about" class="about"><div class="wrap"><div><h2>Meet FUELX</h2>
+<p>FUELX is an Indian nutrition brand on a simple mission: make healthy snacking easy, tasty and part of every day.</p>
+<p>From protein bars and protein chips to fruit-based juices, everything we make is designed for people who keep moving.</p></div>
+<div class="stats"><div class="stat"><b>3</b><span>Product lines</span></div><div class="stat"><b>100%</b><span>Made in India</span></div><div class="stat"><b>6</b><span>Flavours to start</span></div><div class="stat"><b>1</b><span>Mission: fuel you</span></div></div></div></section>
+<section id="contact"><div class="wrap"><div class="box"><div><h2>Get in touch</h2><p>Questions, bulk orders or retail partnerships? Send us a note.</p><p><b>hello@fuelx.in</b> (replace with your email)</p></div>
+<form onsubmit="event.preventDefault();this.innerHTML='<b>Thanks! We’ll be in touch soon.</b>'"><input required placeholder="Your name" aria-label="Name"><input required type="email" placeholder="Email address" aria-label="Email"><textarea required rows="3" placeholder="How can we help?" aria-label="Message"></textarea><button class="btn">Send message</button></form></div></div></section>
+</main>
+<footer><div class="wrap"><a class="logo" href="#top" style="color:#fff"><svg><use href="#lg"/></svg>FUEL<b>X</b></a><div>© 2026 FUELX. All rights reserved.</div></div></footer>
+<div id="ov" onclick="tg(0)"></div>
+<aside id="dr" aria-label="Cart"><div class="row"><h3 style="font-size:34px">Your cart</h3><button class="cartbtn" style="color:inherit" onclick="tg(0)">Close</button></div><div id="cb"></div></aside>
+<script>
+var P=[{n:"Choco Fudge Protein Bar",c:"Protein bars",d:"Box of 6 · 20g protein per bar",p:599,k:"#e8ff00",s:"BAR"},
+{n:"Peanut Butter Protein Bar",c:"Protein bars",d:"Box of 6 · 20g protein per bar",p:599,k:"#ffd23f",s:"BAR"},
+{n:"Peri Peri Protein Chips",c:"Protein chips",d:"Pack of 3 · Crunchy and high protein",p:297,k:"#ff7a1a",s:"CHIPS"},
+{n:"Cream & Onion Protein Chips",c:"Protein chips",d:"Pack of 3 · Crunchy and high protein",p:297,k:"#8ee07a",s:"CHIPS"},
+{n:"Mango Fruit Juice",c:"Fruit juices",d:"Pack of 4 · 200ml bottles",p:249,k:"#ffb703",s:"JUICE"},
+{n:"Pomegranate Fruit Juice",c:"Fruit juices",d:"Pack of 4 · 200ml bottles",p:279,k:"#ff3d71",s:"JUICE"}];
+var cats=["All","Protein bars","Protein chips","Fruit juices"],cur="All",cart={},step=0;
+function $(i){return document.getElementById(i)}
+function rs(){$("tabs").innerHTML=cats.map(function(c){return '<button class="tab'+(c==cur?" on":"")+'" onclick="cur=\''+c+'\';rs()">'+c+"</button>"}).join("");
+$("pg").innerHTML=P.map(function(x,i){return x.c!=cur&&cur!="All"?"":'<div class="card"><div class="sw" style="background:'+x.k+'">'+x.s+"</div><h3>"+x.n+"</h3><p>"+x.d+'</p><div class="row"><span class="price">₹'+x.p+'</span><button class="btn sm" onclick="add('+i+')">Add to cart</button></div></div>'}).join("")}
+function add(i){cart[i]=(cart[i]||0)+1;step=0;rc();tg(1)}
+function ch(i,d){cart[i]+=d;if(cart[i]<1)delete cart[i];rc()}
+function tot(){return Object.keys(cart).reduce(function(a,i){return a+P[i].p*cart[i]},0)}
+function rc(){var ks=Object.keys(cart),n=0,h="";ks.forEach(function(i){n+=cart[i]});$("cn").textContent=n;
+if(step==2){h='<h3 style="font-size:40px;margin:30px 0 10px">Order placed!</h3><p>Thank you for choosing FUELX. This is a demo checkout, so no payment was taken.</p>'}
+else if(!ks.length){h='<p style="color:var(--m)">Your cart is empty. Add something tasty!</p>'}
+else{h=ks.map(function(i){return '<div class="ci"><div><b>'+P[i].n+'</b><br>₹'+P[i].p+'</div><div class="q"><button onclick="ch('+i+',-1)">−</button> '+cart[i]+' <button onclick="ch('+i+',1)">+</button></div></div>'}).join("")+
+'<div class="row" style="padding:16px 0"><b>Total</b><span class="price">₹'+tot()+"</span></div>"+
+(step==0?'<button class="btn" onclick="step=1;rc()">Checkout</button>':'<form onsubmit="event.preventDefault();cart={};step=2;rc()" style="margin-top:0"><input required placeholder="Full name"><input required placeholder="Phone number"><textarea required rows="2" placeholder="Delivery address"></textarea><div class="pay"><label><input type="radio" name="pm" checked> UPI (GPay, PhonePe, Paytm)</label><label><input type="radio" name="pm"> Credit / Debit card</label><label><input type="radio" name="pm"> Cash on delivery</label></div><button class="btn">Place order · ₹'+tot()+"</button></form>")}
+$("cb").innerHTML=h}
+function tg(o){$("dr").classList.toggle("open",!!o);$("ov").style.display=o?"block":"none";if(!o&&step==2){step=0;rc()}}
+rs();rc();
+</script></body></html>
